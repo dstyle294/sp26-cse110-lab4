@@ -1,0 +1,11 @@
+1. At Line 12, `3` will be printed, since `i` is declared as a `var` type, so it's scope is not limited to the for loop, and is defined for the entire function. Therefore, at the end of the for loop, since the length of the list is 3, we will increase `i` till it reaches 3 and then exit the for loop. 
+2. We know that `discountedPrice` is declared as a `var` type, so it's scope is defined for the entire function. Using the discount factor, we find that at the end of the for loop, `i = 2`, so discountedPrice = $0.5(300) = 150$. So, we will print `150`. 
+3. We know that `finalPrice` is declared in the function, so it's scope is throughout the function (doesn't matter that it is a `var` type). Using the `discountedPrice` at the end of the for loop, we find that `finalPrice` = $Math.round(150 * 100) / 100 = 150$, so we print `150`
+4. This will return all of the `discountedPrice`, for each value of `i` as a list. This is `[50, 100, 150]`.
+5. Line 12 will return an error, since `i` is defined as a `let` type in the for loop, meaning that it is not declared for the entire function's scope, so `i` is not defined here. 
+6. Line 13 will return an error since `discountedPrice` is defined for the scope of the for loop only, and not the entire function's scope, so `discountedPrice` is not defined here. 
+7. Line 14 will print the price at the end of the for loop, since it is declared for the entire function's scope. This final price is the same as Question 3, `150`.
+8. Since discounted is declared for the entire function's scope, the discounted list will contain all of the discounted prices, the same as question 4, `[50, 100, 150]`.
+9. Line 11 will return an error, since `i` is defined as a `let` type in the for loop, meaning that it is not declared for the entire function's scope, so `i` is not defined here. 
+10. Line 12 will print the length of `prices`, which is `3`. 
+11. This will return the discounted list of prices, as expected, `[50, 100, 150]`. Note that you can modify the contents of the list, even though it is defined as a `const` variable type. The `const` variable type simply makes sure that you cannot reassign `discounted` itself.
