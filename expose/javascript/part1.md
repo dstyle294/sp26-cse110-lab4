@@ -1,3 +1,7 @@
-- **Question 1:** Line 9 prints 'values added: 20'
-- **Question 2:** Line 13 prints 'final result: 20'
+- **Question 1:** Line 9 prints `values added: 20`
+- **Question 2:** Line 13 prints `final result: 20`
 - **Question 3:** You can accidentally overwrite values that you wouldn't mean to because var is function-scoped, and ignores scopes of if condition/for loops. Also var allows you to redeclare the same variable multiple times in the same scope without any warning or error, which can lead to silent errors. 
+- **Question 4:** Line 9 prints `values added: 20`
+- **Question 5:** The code throws an error at Line 13 as variables declared using `let` can only be accessed in the scope in which they are declared, meaning that it is only declared for the scope of the if condition, not the entire function. So, the interpreter will not know what result is within the scope of the function.
+- **Question 6:** The code throws an error at Line 5 since we tried to reassign the value of a `const` variable, `result`. Variables declared with the `const` keyword prevents it from being reassigned after it is assigned for the first time.
+- **Question 7:** *If* we got past the error at Line 5, then the code would throw an error at Line 13 as variables declared using `const` can only be accessed in the scope in which they are declared, meaning that it is only declared for the scope of the if condition, not the entire function. So, the interpreter will not know what result is within the scope of the function, like the `let` keyword's behavior in Question 5.
